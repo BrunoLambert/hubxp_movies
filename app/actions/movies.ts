@@ -18,7 +18,7 @@ export async function searchMovies(searchText: string, page?: number) {
         })
 
         return { status, data } as { status: number, data: MoviesResponseType }
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error(error)
         throw error
     }
@@ -34,7 +34,7 @@ export async function getMovieDetails(movieID: number) {
         })
 
         return { status, data } as { status: number, data: MovieDetailsType }
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error(error)
         throw error
     }

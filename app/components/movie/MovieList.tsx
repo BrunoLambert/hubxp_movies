@@ -1,15 +1,13 @@
 'use client'
 
 import { HubXPAppContext } from '@/app/providers/hubxpapp-provider';
-import { Card, CircularProgress, Grid, Typography, Skeleton, CardContent } from '@mui/material';
+import { Card, Grid, Skeleton, CardContent } from '@mui/material';
 import * as React from 'react';
 import MovieCard from './MovieCard';
 import { searchMovies } from '@/app/actions/movies';
 import MovieModal from './MovieModal';
 
-interface MovieListProps { }
-
-const MovieList: React.FunctionComponent<MovieListProps> = () => {
+const MovieList: React.FunctionComponent = () => {
     const {
         movies,
         updateMoviesListInformation,

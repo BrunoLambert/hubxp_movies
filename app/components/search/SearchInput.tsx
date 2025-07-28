@@ -6,9 +6,7 @@ import { searchMovies } from '@/app/actions/movies';
 import { useDebounce } from '@/app/hooks/useDebounce';
 import { HubXPAppContext } from '@/app/providers/hubxpapp-provider';
 
-interface SearchInputProps { }
-
-const SearchInput: React.FunctionComponent<SearchInputProps> = () => {
+const SearchInput: React.FunctionComponent = () => {
     const { updateMoviesListInformation, setAppLoading } = React.useContext(HubXPAppContext)
 
     const [searchText, setSearchText] = React.useState<string>("")
