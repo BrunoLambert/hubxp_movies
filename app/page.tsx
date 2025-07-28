@@ -29,8 +29,13 @@ export default function Home() {
         </div>
       </main>
 
-      <footer>
-        Footer
+      <footer className='text-center py-2 border-t-[1px] border-purple-200'>
+        <Typography variant='caption' component="p">
+          Esse é uma página dedicada para uso pessoal, sem fins lucrativos, usando serviços da The Movie DB (TMDB)
+        </Typography>
+        <Typography variant='caption' component="p">
+          Para mais informações sobre o conteudo da TMDB, <a href='https://developer.themoviedb.org/docs/getting-started' target='_blank' className='underline decoration-solid text-purple-400'>clique aqui.</a>
+        </Typography>
       </footer>
     </div>
   );
